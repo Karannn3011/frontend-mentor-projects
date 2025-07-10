@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Lexend+Deca&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: "Rubik", sans-serif;
+  --color-blue-600: hsl(231, 69%, 60%);
+  --color-red-400: hsl(0, 94%, 66%);
+  --color-grey-50: hsl(0, 0%, 97%);
+  --color-blue-950: hsl(229, 31%, 21%);
+}

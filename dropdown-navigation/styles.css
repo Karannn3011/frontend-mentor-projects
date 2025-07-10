@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+body {
+    background-color: var(--almost-white);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+img[alt="hero image"] {
+    width: 100%;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sidebar {
+    padding: 1.5rem;
+    height: 100%;
+    width: 55%;
+    background-color: var(--almost-white);
+    position: relative;
+    left: 45%;
+    transform: translateX(100%);
+}
+.closemenu {
+    padding: 0 0.5rem;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+}
+.navright, .menudesktop {
+    display: none;
+}
+.menudesktop {
+    display: none;
+}
+ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+li {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--medium-gray);
+}
+.arrowdown {
+    margin-left: 10px;
+    width: 10px;
+}
+.login {
+    width: 100%;
+    background-color: transparent;
+    color: var(--medium-gray);
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+.login:hover {
+    color: var(--almost-black);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.register {
+    width: 100%;
+    border: 1px solid var(--medium-gray);
+    background-color: transparent;
+    color: var(--medium-gray);
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.register:hover {
+    color: var(--almost-black);
+    cursor: pointer;
+    border: 1px solid var(--almost-black);
+    transition: all 0.3s ease-in-out;
+}
+#feature > img {
+    src: url("images/icon-arrow-up.svg");
+}
+#features ul {
+    display: none;
+    margin: 0 30px;
+}
+#features ul li {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--medium-gray);
+    padding-left: 5px;
+}
+#company ul {
+    display: none;
+    margin: 0 30px;
+}
+#company ul li {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--medium-gray);
+}
+
+#features ul li:nth-of-type(1) {
+    list-style: url("images/icon-todo.svg");
+}
+#features ul li:nth-of-type(2) {
+    list-style: url("images/icon-calendar.svg");
+}
+#features ul li:nth-of-type(3) {
+    list-style: url("images/icon-reminders.svg");
+}
+#features ul li:nth-of-type(4) {
+    list-style: url("images/icon-planning.svg");
+}
+main picture img{
+    margin: 10px auto;
+}
+.info {
+    padding: 1.5rem;
+    text-align: center;
+}
+.info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.info p {
+    font-size: 1rem;
+    color: var(--medium-gray);
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.learnmore {
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--almost-black);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.learnmore:hover {
+    cursor: pointer;
+    background-color: var(--almost-white);
+    color: var(--almost-black);
+    border: 1px solid var(--almost-black);
+    transition: all 0.3s ease-in-out;
+}
+.companies {
+    width: 100%;
+    margin: 2.5rem auto 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.companies img {
+    width: 65px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+    .lightbox {
+        display: none;
+    }
+    .menuicon {
+        display: none;
+    }
+    .menudesktop {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav {
+        padding: 0.3rem 1rem;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+    }
+    .navleft  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .navleft img {
+        height: 25px;
+    }
+    .navleft ul li img[alt="arrowdown"] {
+        height:8px;
+    }
+    .navright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+    }
+    .navright button {
+        padding: 0.8rem 1.5rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .menudesktop ul {
+        display: flex;
+        position: relative;
+    }
+    .menudesktop ul li {
+        margin: 0 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--medium-gray);
+    }
+    .menudesktop ul li:hover {
+        color: var(--almost-black);
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+    .featuresdd {
+        display: none;
+        width: 130px;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 0px 15px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    .featuresdd ul {
+        display: block;
+        
+    }
+    .featuresdd ul li {
+        font-size: 15px;
+        padding: 10px 0px; 
+    }
+    .featuresdd ul li:nth-of-type(1) {
+        list-style: url("images/icon-todo.svg");
+    }
+    .featuresdd ul li:nth-of-type(2) {
+        list-style: url("images/icon-calendar.svg");
+    }
+    .featuresdd ul li:nth-of-type(3) {
+        list-style: url("images/icon-reminders.svg");
+    }
+    .featuresdd ul li:nth-of-type(4) {
+        list-style: url("images/icon-planning.svg");
+    }
+    
+    .companydd {
+        display: none;
+        width: 130px;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        background-color: white;
+        border-radius: 1rem;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    .companydd ul {
+        display: block;
+    }
+    .companydd ul li {
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    main {
+        padding: 10px;
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    main picture {
+        width: 30%;
+    }
+    .info {
+        width: 50%;
+        text-align: left;
+    }
+    .info h1 {
+        font-size: 4rem;
+    }
+}

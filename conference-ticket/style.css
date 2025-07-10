@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap');
+
+:root {
+    --neutral-0: hsl(0, 0%, 100%);
+    --neutral-300: hsl(252, 6%, 83%);
+    --neutral-500: hsl(245, 15%, 58%);
+    --neutral-700: hsl(245, 19%, 35%);
+    --neutral-900: hsl(248, 70%, 10%);
+
+    --orange-500: hsl(7, 88%, 67%);
+    --orange-700: hsl(7, 71%, 60%);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  color: var(--neutral-0);
+}
+html {
+    background-image: url(assets/images/pattern-lines.svg),
+    url(assets/images/pattern-squiggly-line-top.svg),
+    url(assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg),
+    url(assets/images/background-mobile.png);
+    background-position: center center, top 15px right -30px, bottom left, center center;
+    background-size: cover, 60%, 60%, cover;
+    background-repeat: no-repeat;
+
+}
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px 5px;
+}
+header h1 {
+    background-position: center;
+    background-blend-mode: color;
+    font-weight: 700;
+    margin: 2rem 0 2rem 0;
+}
+header p {
+    color: var(--neutral-300);
+    font-weight: 400;
+    font-size: 20px;
+}
+#avatar {
+    display: none;
+}
+.input-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--neutral-0);
+    margin: 30px 20px 20px 20px;
+}
+
+.avatar-box {
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 325px;
+    border: 1px dashed var(--neutral-500);
+    border-radius: 20px;
+}
+.avatar-box:active {
+    border: 1px solid white;
+}
+.avatar-label img {
+    width: 60px;
+    background-color: hsla(245, 15%, 58%, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.avatar-filetype {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    column-gap: 5px;
+}
+.textfield {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    max-width: 325px;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid var(--neutral-500);
+    color: var(--neutral-300);
+    font-size: 16px;
+}
+.hidden {
+    display: none;
+}
+.error {
+    color: var(--orange-500);
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#submit {
+    width: 325px;
+    margin: 30px 20px 40px 20px;
+    padding: 15px 20px;
+    background-color: var(--orange-500);
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--neutral-900);
+}
+
+.attribution {
+    font-size: 12px;
+    color: var(--neutral-300);
+    text-align: center;
+}
+.ticket {
+    display: none;
+    height: 100vh;
+    text-align: center;;
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 325px;
+}
+.ticket h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 30px 0;
+}
+.ticket-header > p {
+    font-size: 20px;
+    color: var(--neutral-0);
+    margin: 0;
+}
+.full-name {
+    font-weight: 500;
+    background: linear-gradient(to right, var(--orange-500), var(--neutral-0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.full-email {
+    color: var(--orange-500)
+}
+
+.ticket-body {
+    margin: 50px 0;
+    width: 100%;
+    padding: 20px 15px;
+    background-image: url(assets/images/pattern-ticket.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    row-gap: 30px;
+    grid-template-areas: 
+    "venue id"
+    "details id";
+}
+.ticket-venue {
+    grid-area: venue;
+    display: flex;
+    align-items:flex-start
+}
+.ticket-venue img {
+    width: 30px;
+    margin-right: 10px;
+}
+.ticket-venue h2 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;;
+}
+.ticket-venue h2::after {
+    content: 'Jan 31, 2025 / Austin, TX';
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--neutral-300);
+}
+.ticket-details {
+    text-align: left;
+    grid-area: details;
+    display: flex;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+.ticket-details img {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.ticket-details h2 {
+    color: var(--neutral-300);
+    font-weight: 500;
+    font-size: 16px;
+}
+.ticket-details p {
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--neutral-300);
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.githubpreview {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.githubname {
+    position: relative;
+    top: -15px;
+}
+.details img {
+    width: 12px;
+}
+.ticket-id {
+    color: var(--neutral-500);
+    padding: 15px;
+    grid-area: id;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+input:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+@media screen and (min-width: 1024px) {
+    html {
+        background-image: url(assets/images/pattern-lines.svg),
+        url(assets/images/pattern-squiggly-line-top.svg),
+        url(assets/images/pattern-squiggly-line-bottom-desktop.svg),
+        url(assets/images/background-desktop.png);
+        background-position: center center, top 15px right -30px, bottom left, center center;
+        background-size: cover, 60%, 60%, cover;
+    }
+    .form {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 50px;
+        padding: 0px 300px;
+    }
+    .form input, .avatar-box {
+       width: 40%;
+       max-width: 100vw;
+       margin: auto;
+    }
+    .form h3, .avatar-filetype, .error{
+        position: relative;
+        left: 50%;
+        transform: translateX(-22.5%);
+    }
+    #submit {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin: 30px auto;
+    }
+    .ticket {
+        display: none;
+        width: 50%;
+        max-width: 100vw;
+        text-align: center;
+    }
+    .ticket h1 {
+        font-size: 50px;
+    }
+    .ticket-container {
+        height: 90vh;
+        height: auto;
+    }
+    .ticket-body {
+        justify-content: space-evenly;
+        row-gap: 70px;
+        text-align: center;
+        height: auto;
+        background-size: 500px 400px;
+        background-position: center center;
+        padding: 60px 20px;
+        width: 100%;
+    }
+    .ticket-venue {
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .ticket-details {
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .ticket-id {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        transform: scale(1.2) rotate(90deg);
+    }
+    .details img {
+        width: 20px;
+        aspect-ratio: 0.5/0.25;
+    }
+
+}

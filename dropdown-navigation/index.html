@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="lightbox">
+    <div class="sidebar">
+      <img src="images/icon-close-menu.svg" alt="close menu" class="closemenu">
+      <ul>
+        <li id="features">Features<img src="images/icon-arrow-down.svg" alt="arrowdown" class="arrowdown">
+          <ul>
+            <li>Todo List</li>
+            <li>Calendar</li>
+            <li>Reminders</li>
+            <li>Planning</li>
+          </ul></li>
+        <li id="company">Company<img src="images/icon-arrow-down.svg" alt="arrowdown" class="arrowdown">
+          <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <button class="login">Login</button>
+      <button class="register">Register</button>
+    </div>
+  </div>
+  
+<nav>
+  <div class="navleft">
+  <img src="images/logo.svg" alt="logo">
+  <div class="menudesktop">
+    <ul>
+      <li>Features <img src="images/icon-arrow-down.svg" alt="arrowdown" class="arrowdown">
+      <div class="featuresdd">
+        <ul>
+          <li>Todo List</li>
+          <li>Calendar</li>
+          <li>Reminders</li>
+          <li>Planning</li>
+        </ul>
+      </div></li>
+      <li>Company <img src="images/icon-arrow-down.svg" alt="arrowdown" class="arrowdown">
+      <div class="companydd">
+        <ul>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </div></li>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+    </div>
+  </div>
+    <div class="navright">
+    <button class="login">Login</button>
+    <button class="register">Register</button>
+    </div>
+  <img src="images/icon-menu.svg" alt="hamburger menu" class="menuicon">
+</nav>
+
+
+<main>
+<picture>
+  <source media="(min-width: 1024px)" srcset="images/image-hero-desktop.png">
+  <img src="images/image-hero-mobile.png" alt="hero image">
+</picture>
+<section class="info">
+  <h1>Make remote work</h1>
+
+  <p>Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+
+  <button class="learnmore">Learn more</button>
+  <section class="companies">
+    <img src="images/client-databiz.svg" alt="client databiz">
+    <img src="images/client-audiophile.svg" alt="client audiophile">
+    <img src="images/client-meet.svg" alt="client meet">
+    <img src="images/client-maker.svg" alt="client maker">
+  </section>
+</section>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Karannn3011">Karannn3011</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

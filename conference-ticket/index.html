@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <header>
+    <img src="./assets/images/logo-full.svg" alt="Logo" class="logo">
+    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p>Secure your spot at the next year's biggest coding conference.</p>
+  </header>
+  <section class="form">
+    <div class="form-container">
+      <label for="avatar" class="avatar-label"><h3 class="input-title">Upload Avatar</h3>
+        <div class="avatar-box"><img id="uploadicon" src="./assets/images/icon-upload.svg" alt="Upload icon"><p>Drag and drop or click to upload</p>
+        </div></label>
+        <input type="file" id="avatar" accept="image/png, image/jpeg" class="avatar-input hidden">
+      <p class="avatar-filetype"><img src="./assets/images/icon-info.svg" alt="File icon">Upload your photo (JPG or PNG, max size: 500KB).</p></label>
+
+      <label for="name"><h3 class="input-title">Full Name</h3></label>
+        <input class="textfield" type="text" id="name" required>
+        <p class="error-message-empty hidden error">This field is required</p>
+        <p class="error-message-notaname hidden error">Looks like this is not a name</p>
+
+      <label for="email"><h3 class="input-title">Email Address</h3></label>
+        <input class="textfield" type="email" placeholder="example@email" id="email" required>
+        <p class="error-message-emptymail hidden error">This field is required</p>
+        <p class="error-message-notamail hidden error">Looks like this is not an email</p>
+
+        <label for="github"><h3 class="input-title">GitHub Username</h3></label>
+        <input class="textfield" placeholder="@yourusername" type="text" id="github" required>
+        <p class="error-message-emptygithub hidden error">This field is required</p>
+
+        <button type="submit" id="submit">Generate My Ticket</input>
+    </div>
+  </section>
+  <!-- Form starts -->
+  <section class="ticket">
+    <div class="ticket-container">
+      <div class="ticket-header">
+        <img src="./assets/images/logo-full.svg" alt="Logo" class="logo">
+        <h1>Congrats, <span class="full-name">Full Name</span>! Your ticket is ready.</h1>
+        <p>We've emailed your ticket to <span class="full-email">Email Address</span> and will send updates in the run up to the event.</p>
+      </div>
+      <div class="ticket-body">
+        <div class="ticket-venue">
+          <img src="/assets/images/logo-mark.svg" alt="Logo" class="logo">
+          <h2 class="eventname">Coding Conf</h2>
+        </div>
+        <div class="ticket-details">
+          <img src="/assets/images/image-avatar.jpg" id="avatar-preview" alt="Avatar">
+          <div class="details"><h2 class="full-name">Full Name</h2><p class="gihubpreview"><img src="assets/images/icon-github.svg" alt="Github icon"><span class="githubname">@jonatnkristof0101</span> </p></div>
+          
+        </div>
+        <p class="ticket-id">#010424</div>
+    </div>
+  </section>
+
+
+  <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+
+  <!-- Congrats,  Full Name --! Your ticket is ready.
+
+  We've emailed your ticket to -- Email Address -- and will send updates in the run up to the event.
+
+  Coding Conf
+  Jan 31, 2025 / Austin, TX -->
+
+  <!-- Generated tickets ends -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Karannn3011</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

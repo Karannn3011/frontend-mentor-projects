@@ -1,0 +1,141 @@
+
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+body {
+    background-color: hsl(331, 27%, 82%);
+    
+}
+
+img {
+    border-radius: 20px;
+}
+h1{
+    font-family: "Young Serif", sans-serif;
+    font-weight: lighter;
+    color: hsl(24, 5%, 18%);
+}
+h2 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: lighter;
+    color: hsl(14, 45%, 36%);
+}
+h3{
+    font-family: "Outfit", sans-serif;  
+    color: hsl(332, 51%, 32%);
+}
+p,li,.nutvalues {
+    font-family: "Outfit", sans-serif;
+    font-size:16px;
+}
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px 10px 10px 25px;
+    border-radius: 10px;
+}
+
+b {
+    color: hsl(24, 5%, 18%);
+}
+li {
+    padding-left: 5px;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+.preparation li::marker {
+    color: hsl(332, 51%, 32%);
+}
+.container {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: balance;
+    height: auto;
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+}
+.instructions {
+    text-align: left;
+    text-wrap: none;
+    border-top: 1px solid hsl(30, 8%, 80%);
+    border-bottom: 1px solid hsl(30, 8%, 80%);
+    padding: 10px 0 15px 0;
+}
+.nutvalues {
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "caloires calvalue"
+    "carbs carbsvalue"
+    "fat fatvalue"
+    "protein proteinvalue";
+    grid-row-gap: 15px;
+}
+.nutvalues div {
+    border-bottom: 1px solid hsl(30, 8%, 80%);
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.nutrition p {
+    padding-bottom: 20px;
+}
+.calvalue, .carbsvalue, .fatvalue, .proteinvalue {
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+   
+    body {
+        overflow-x: hidden;
+        background-color: white;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+      h2, h3 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-weight: 400;
+      }
+      .container > div {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .container > img {
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+      }
+      .attribution {
+        font-size: 1rem;
+        text-align: center;
+      }
+  }

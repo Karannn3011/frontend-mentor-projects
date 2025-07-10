@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-cyan: hsl(180, 66%, 49%);
+  --color-dark-violet: hsl(257, 27%, 26%);
+
+  --color-red: hsl(0, 87%, 67%);
+
+  --color-gray: hsl(0, 0%, 75%);
+  --color-grayish-violet: hsl(257, 7%, 63%);
+  --color-very-dark-blue: hsl(255, 11%, 22%);
+  --color-very-dark-violet: hsl(260, 8%, 14%);
+}
+
+@utility filter-cyan {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(83%) saturate(418%)
+      hue-rotate(126deg) brightness(92%) contrast(86%);
+  }
+
