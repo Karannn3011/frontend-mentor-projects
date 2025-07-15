@@ -111,35 +111,15 @@ npm run build
 - **Node.js** (v14 or higher)
 - **npm** or **yarn**
 
-## 🎯 Challenge Difficulty Levels
 
-- **🟢 Newbie** - HTML/CSS fundamentals
-- **🟡 Junior** - JavaScript and responsive design
-- **🟠 Intermediate** - Complex layouts and interactions
-- **🔴 Advanced** - Full-stack integration
-
-## 📈 Progress Tracking
-
-- ✅ **26/26** Frontend Mentor challenges completed
-- 🎨 **Pixel-perfect** designs implemented
-- 📱 **100%** mobile responsive
-- ⚡ **Optimized** for performance
-- ♿ **Accessible** designs
-
-## 🔗 Connect With Me
+##  Connect With Me
 
 - **GitHub**: [@Karannn3011](https://github.com/Karannn3011)
 - **Frontend Mentor**: [@Karannn3011](https://www.frontendmentor.io/profile/Karannn3011)
 
-## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [Frontend Mentor](https://www.frontendmentor.io) for providing amazing design challenges
 - The web development community for inspiration and support
 
----
-
-⭐ **Star this repository** if you find it helpful!
