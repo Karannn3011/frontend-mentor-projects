@@ -11,7 +11,7 @@ export const CountryProvider = ({ children }) => {
   useEffect(() => {
     const fetchCountryData = async () => {
       try {
-        const response = await axios.get('https://karan-country-api.onrender.com/api/countries');
+        const response = await axios.get('https://karannn3011-countryapi.onrender.com/api/countries');
         setCountryData(response.data);
         setAllCountries(response.data); // <-- Store original data
       } catch (err) {
