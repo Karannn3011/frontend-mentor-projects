@@ -30,13 +30,17 @@ Users should be able to:
 ### Screenshot
 
 Desktop:
-![dd1.png]
-![dd2.png]
+<img width="1919" height="1270" alt="dd1" src="https://github.com/user-attachments/assets/444c4ae3-30cd-432b-92c6-9886ac9368be" />
+
+<img width="1919" height="902" alt="dd2" src="https://github.com/user-attachments/assets/1761be49-3e0e-4c0c-b870-0b629cd7d22b" />
+
 
 Mobile:
 
-![md1.png]
-![md2.png]
+<img width="576" height="3149" alt="md1" src="https://github.com/user-attachments/assets/af216e00-4c0e-4864-af78-289c7b750bd2" />
+
+<img width="576" height="1278" alt="md2" src="https://github.com/user-attachments/assets/5205e23f-5804-4e15-a8e3-f2ad3e85ab8d" />
+
 
 
 ### Links
